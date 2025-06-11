@@ -2,7 +2,7 @@ CREATE DATABASE loan_database;
 
 CREATE TABLE branch (
 	branch_name varchar(50) CONSTRAINT branch_name_key PRIMARY KEY,
-	branch_city varchar(50), CHECK (branch_city IN ('Brooklyn', 'Bronx', 'Manhattan', 'Yonkers')),
+	branch_city varchar(50), CHECK (branch_city IN ('Cleveland', 'Tremont', 'Beachwood', 'Lakewood')),
 	assets money NOT NULL CHECK (assets>='0.00')
 );
 
